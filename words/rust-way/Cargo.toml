@@ -1,0 +1,11 @@
+[package]
+name = "rust-way"
+version = "0.1.0"
+authors = ["Alexander K <code.alexander.k@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+statistical = "1.0.0"
+regex = "1"
