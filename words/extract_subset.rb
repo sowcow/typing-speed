@@ -1,7 +1,7 @@
 require 'descriptive_statistics'
 
-# this stuff would really use some of rust perfomance with
-# and some nice data structures
+# this stuff would really use some of rust perfomance
+# this file also misses one obvious optimization that is used in rust version
 
 file = File.join __dir__, '10k.txt'
 text = File.read file
