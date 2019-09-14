@@ -1,6 +1,11 @@
 # this project
 
-Type words for a minute and see how you performed.
+- Type words for a minute to see how you perform
+- All letters are more or less equally used
+
+
+- Vocabulary is planned to be changed
+- There is no decision yet on giving conventional wpm/cpm characteristics
 
 ## motivation
 
