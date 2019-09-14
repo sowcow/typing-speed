@@ -15,11 +15,12 @@ fn main() -> Result<(), E> {
     let mut subset = load_words()?;
 
     // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    subset.retain(|x| x.len() == 5);
+    subset.retain(|x| x.len() >= 5);
     let group_size = 100;
     let times = 100; // save after
 
     println!("{}", subset.len());
+    println!("{}", subset.first().unwrap());
 
     let finders = letter_finders();
     println!("score: {}", score(&subset, &finders));
@@ -84,7 +85,7 @@ fn load_string() -> Result<String, E> {
 
 fn load_words() -> Result<Vec<String>, E> {
     let string = load_string()?;
-    let vec = string.lines().map(|x| x.to_owned()).collect();
+    let vec = string.lines().map(|x| x.to_owned().trim().to_owned()).collect();
     Ok(vec)
 }
 

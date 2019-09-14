@@ -1,0 +1,13 @@
+require 'json'
+
+INPUT = 'subsets/subset-336'
+OUTPUT = '../frontend/src/app/words.json'
+
+task :default do
+  text = File.read INPUT
+  puts text
+  words = text.strip.lines.map &:strip
+  json = JSON.pretty_generate words
+  File.write OUTPUT, json
+  puts json
+end

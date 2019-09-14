@@ -5,7 +5,7 @@ require 'descriptive_statistics'
 
 END{
   # file = File.join __dir__, 'subsets2/subset-196'
-  file = File.join __dir__, 'subsets/subset-336'
+  file = ARGV.pop || File.join(__dir__, 'subsets/subset-336')
   text = File.read file
   words = text.lines.map &:strip
   require 'yaml'
