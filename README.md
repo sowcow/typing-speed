@@ -1,5 +1,6 @@
-# This project
+# Typing Speed
 
+- Naming is hard
 - Type words for a minute to see how you perform
 - All letters are more or less equally used
 - Vocabulary is planned to be changed
