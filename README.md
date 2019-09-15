@@ -2,10 +2,15 @@
 
 - Naming is hard
 - Type words for a minute to see how you perform
-- All letters are more or less equally frequently used
-- Vocabulary is planned to be changed
-- There is no decision yet on giving conventional wpm/cpm characteristics
-- Per key stats are unlikely but who knows
+- All letters have more or less equal frequency of appearance
+- It doesn't give you conventional WPM (one word at a time + average word length is different)
+
+## Possibilities for Change
+
+1. Vocabulary is planned to be changed
+1. Per key stats are unlikely but who knows
+1. No idea yet about replacing one word at a time mechanics with a continuous line (probably requires replacing "particles")
+1. There is no decision yet on giving conventional wpm/cpm characteristics (requires continuous line)
 
 ## Motivation
 
