@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/typing-speed/static/js/main.3f73e285.chunk.js",
-    "main.js.map": "/typing-speed/static/js/main.3f73e285.chunk.js.map",
+    "main.js": "/typing-speed/static/js/main.9146f25d.chunk.js",
+    "main.js.map": "/typing-speed/static/js/main.9146f25d.chunk.js.map",
     "runtime~main.js": "/typing-speed/static/js/runtime~main.9a82bc1a.js",
     "runtime~main.js.map": "/typing-speed/static/js/runtime~main.9a82bc1a.js.map",
     "static/js/2.91977de1.chunk.js": "/typing-speed/static/js/2.91977de1.chunk.js",
     "static/js/2.91977de1.chunk.js.map": "/typing-speed/static/js/2.91977de1.chunk.js.map",
     "index.html": "/typing-speed/index.html",
-    "precache-manifest.4c5b63b6b4d336469a1f84e95c98599e.js": "/typing-speed/precache-manifest.4c5b63b6b4d336469a1f84e95c98599e.js",
+    "precache-manifest.4dd3a6d0bd0ea384964385e74db73d2a.js": "/typing-speed/precache-manifest.4dd3a6d0bd0ea384964385e74db73d2a.js",
     "service-worker.js": "/typing-speed/service-worker.js"
   }
 }
