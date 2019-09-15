@@ -15,6 +15,15 @@ let Global = createGlobalStyle`
   html, body, #root, #root > div {
     height: 100%;
   }
+  .show, .hide {
+    transition: opacity 0.3s;
+  }
+  .show {
+    opacity: 1;
+  }
+  .hide {
+    opacity: 0;
+  }
 `
 
 let A_LETTER = /^.$/
@@ -117,7 +126,7 @@ function Typing({ words }) {
     if (done) return
 
     if (e.key === ' ') { // || e.key === 'Enter') {
-      if (input == '') return // NOTE: double presses are ok.....
+      if (input === '') return // NOTE: double presses are ok.....
       nextWord()
     } else
     if (e.key === 'Backspace') {
@@ -215,14 +224,19 @@ function Typing({ words }) {
 					/>
         </animated.div>
         <div>
-          { good } hits
+          { good } hit{ ending(good, 's') }
         </div>
         <div>
-          { bad } { bad == 1 ? 'miss' : 'misses' }
+          { bad } miss{ ending(bad, 'es') }
         </div>
 			</animated.div>
 		</TimerBox>
   </Root>
+}
+
+function ending(number, ending) {
+  let hide = number === 1 ? 'hide' : 'show'
+  return <span className={hide}>{ ending }</span>
 }
 
 function distance() {

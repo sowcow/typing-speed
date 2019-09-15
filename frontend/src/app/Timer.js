@@ -1,5 +1,5 @@
 import { differenceInSeconds } from 'date-fns';
-import React, { useState, useEffect, useImperativeHandle, forwardRef, useCallback } from 'react';
+import React, { useState, useImperativeHandle, forwardRef } from 'react';
 import useInterval from '@use-it/interval';
 
 let CHECK_INTERVAL = 100
