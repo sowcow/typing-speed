@@ -218,7 +218,7 @@ function Typing({ words }) {
           { good } hits
         </div>
         <div>
-          { bad } misses
+          { bad } { bad == 1 ? 'miss' : 'misses' }
         </div>
 			</animated.div>
 		</TimerBox>
