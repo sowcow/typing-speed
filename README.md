@@ -5,22 +5,22 @@
 - All letters have more or less equal frequency of appearance
 - It doesn't give you conventional WPM (one word at a time + average word length is different)
 
+## Motivation
+
+The site I used to use finally annoyed me into writing my own simplified version.
+
+## Status
+
+- Ready :heavy_check_mark:
+- Frontend: works as I need it
+- Words: quickly filtered `10k.txt` file. I will probably replace it with 5+ letter words from 30k file after slower filtering.
+
 ## Possibilities for Change
 
 1. Vocabulary is planned to be changed
 1. Per key stats are unlikely but who knows
 1. No idea yet about replacing one word at a time mechanics with a continuous line (probably requires replacing "particles")
 1. There is no decision yet on giving conventional wpm/cpm characteristics (requires continuous line)
-
-## Motivation
-
-The site I used to use finally annoyed me into writing my own simplified version.
-
-## State
-
-- Ready
-- Frontend: works as I need it
-- Words: quickly filtered `10k.txt` file. I will probably replace it with 5+ letter words from 30k file after slower filtering.
 
 ## Plan
 
