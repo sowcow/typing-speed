@@ -2,30 +2,24 @@
 
 - Naming is hard
 - Type words for a minute to see how you perform
-- All letters have more or less equal frequency of appearance
-- It doesn't give you conventional WPM (one word at a time + average word length is different)
+- All consonants have almost equal frequency of appearance
+- Status: ready :heavy_check_mark:
+- It doesn't give you conventional WPM (one word at a time slowers typing and average word length may be different)
 
 ## Motivation
 
 The site I used to use finally annoyed me into writing my own simplified version.
 
-## Status
+## Notes
 
-- Ready :heavy_check_mark:
-- Frontend: works as I need it
-- Words: quickly filtered `10k.txt` file. I will probably replace it with 5+ letter words from 30k file after slower filtering.
+- Frontend: word by word is ok although it slowers typing
+- Words source: good list from http://www.desiquintans.com/nounlist
+- Words filtering: started with all words with rare letters and
+  grown the list in the direction of minimizing the variance of frequency of appearance of consonants :). And after that sacraficed diversity of words for unity of frequency of consonants by removing words in the same direction
 
 ## Possibilities for Change
 
-1. Vocabulary is planned to be changed
-1. Per key stats are unlikely but who knows
+1. Per key stats are unlikely
 1. No idea yet about replacing one word at a time mechanics with a continuous line (probably requires replacing "particles")
 1. There is no decision yet on giving conventional wpm/cpm characteristics (requires continuous line)
-
-## Plan
-
-1. took words from: https://github.com/derekchuank/high-frequency-vocabulary/
-2. extracted a subset to cover letters with more equal frequency
-3. made the frontend
-4. pushed it to github pages
-5. looked into opportunities for errors/speed statistics per key using local storage
+1. I may consider to show the right letter above the wrong one

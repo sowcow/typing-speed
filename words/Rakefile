@@ -1,6 +1,6 @@
 require 'json'
 
-INPUT = 'subsets/subset-336'
+INPUT = 'subsets/current'
 OUTPUT = '../frontend/src/app/words.json'
 
 task :default do
