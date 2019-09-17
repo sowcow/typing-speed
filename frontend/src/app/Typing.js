@@ -256,6 +256,7 @@ let ParticleTemplate = styled.div`
   }
   ${({focus}) => focus ? '' : 'font-size: 32px;'}
   position: absolute;
+  white-space: nowrap;
 `
 function Particle({ dx, dy, children, focus }) {
   let style = {
