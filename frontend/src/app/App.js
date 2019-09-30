@@ -1,14 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import Typing from './Typing';
-import words from './words.json';
+import Typing from './Typing'
+import words from './words.json'
 import { shuffle } from 'lodash'
 
-function App() {
+function App () {
   let xs = shuffle(words)
-  return (
-    <Typing words={xs} />
-  )
+  return <Typing words={xs} />
 }
 
-export default App;
+export default App

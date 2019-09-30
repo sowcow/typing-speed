@@ -1,6 +1,6 @@
-import { differenceInSeconds } from 'date-fns';
-import React, { useState, useImperativeHandle, forwardRef } from 'react';
-import useInterval from '@use-it/interval';
+import { differenceInSeconds } from 'date-fns'
+import React, { useState, useImperativeHandle, forwardRef } from 'react'
+import useInterval from '@use-it/interval'
 
 let CHECK_INTERVAL = 100
 
@@ -26,15 +26,13 @@ let Timer = ({ durationSec, onDone }, ref) => {
   useImperativeHandle(ref, () => ({
     start: () => {
       if (!started) setStarted(new Date())
-    },
+    }
     // clear: () => to start after done have finished
   }))
 
   let timeLeft = durationSec - current
 
-  return <div>
-    { timeLeft } sec.
-  </div>
+  return <div>{timeLeft} sec.</div>
 }
 Timer = forwardRef(Timer)
 
