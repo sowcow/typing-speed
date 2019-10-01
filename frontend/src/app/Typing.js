@@ -51,6 +51,7 @@ function Typing ({ words }) {
 
   function handleKeyboard (e) {
     if (done) return
+    if (e.ctrlKey) return // reloading ctrl+r
 
     if (e.key === ' ') {
       // || e.key === 'Enter') {
