@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.js": "/typing-speed/static/js/main.c8cc47ba.chunk.js",
-    "main.js.map": "/typing-speed/static/js/main.c8cc47ba.chunk.js.map",
-    "runtime~main.js": "/typing-speed/static/js/runtime~main.9a82bc1a.js",
-    "runtime~main.js.map": "/typing-speed/static/js/runtime~main.9a82bc1a.js.map",
-    "static/js/2.10cff256.chunk.js": "/typing-speed/static/js/2.10cff256.chunk.js",
-    "static/js/2.10cff256.chunk.js.map": "/typing-speed/static/js/2.10cff256.chunk.js.map",
+    "main.js": "/typing-speed/static/js/main.be1ff45f.js",
     "index.html": "/typing-speed/index.html",
-    "precache-manifest.1138d1fba4009476acbe897e3e2e9ffc.js": "/typing-speed/precache-manifest.1138d1fba4009476acbe897e3e2e9ffc.js",
-    "service-worker.js": "/typing-speed/service-worker.js"
-  }
+    "main.be1ff45f.js.map": "/typing-speed/static/js/main.be1ff45f.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.be1ff45f.js"
+  ]
 }
