@@ -1,0 +1,29 @@
+require 'pathname'
+
+temp = Pathname 'pages'
+
+clean_state = -> {
+  if temp.exist?
+    temp.rmtree
+    sh "git worktree prune"
+  end
+}
+
+task :default do
+  clean_state.call
+  temp.mkpath
+
+  sh "git worktree add -B gh-pages #{temp} origin/gh-pages"
+  sh "yarn build"
+  Dir.chdir temp do
+    sh "rm -rf *"  # oops?
+    sh "cp -r ../dist/* ."
+  end
+  Dir.chdir temp do
+    sh "git add -A"
+    sh "git commit -m ok"
+    sh "git push"
+  end
+
+  clean_state.call
+end

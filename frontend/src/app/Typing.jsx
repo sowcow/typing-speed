@@ -55,9 +55,10 @@ function Typing ({ words }) {
     if (e.ctrlKey) return // reloading ctrl+r
 
     if (e.key === ' ') {
-      // || e.key === 'Enter') {
       if (input === '') return // NOTE: double presses are ok.....
       nextWord()
+    } else if (e.key === 'Enter') {
+      document.body.classList.toggle('oops')
     } else if (e.key === 'Backspace') {
       setInput(input.substring(0, input.length - 1))
     } else if (A_LETTER.test(e.key)) {
