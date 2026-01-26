@@ -12,7 +12,8 @@ let DURATION = 60
 let INFO = [
   'Type space after every word;',
   'The timer starts after any input;',
-  'If you need to restart — reload the page;'
+  'If you need to restart — reload the page;',
+  "Don't press enter;",
 ]
 
 let A_LETTER = /^.$/
