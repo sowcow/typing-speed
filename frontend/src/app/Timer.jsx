@@ -9,7 +9,7 @@ let Timer = ({ durationSec, onDone }, ref) => {
   let [current, setCurrent] = useState(null)
   let [done, setDone] = useState(false)
 
-  useInterval(() => {
+  useInterval.default(() => {
     if (done) return
     if (!started) return
 

@@ -18,7 +18,7 @@ function Particle ({ dx, dy, children, focus }) {
     transform: `translate(${dx}px, ${dy}px)`
   }
   return (
-    <ParticleTemplate style={style} focus={focus}>
+    <ParticleTemplate style={style} focus={(!!focus).toString()}>
       <SelfCenter>{children}</SelfCenter>
     </ParticleTemplate>
   )
