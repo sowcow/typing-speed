@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/typing-speed/sw.js', { scope: '/typing-speed/' })})}
